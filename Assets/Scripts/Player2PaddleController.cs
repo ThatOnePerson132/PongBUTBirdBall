@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerPaddleController : MonoBehaviour
+public class Player2PaddleController : MonoBehaviour
 {
     public float vertInput;
     public float speed;
@@ -16,7 +16,7 @@ public class PlayerPaddleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vertInput = Input.GetAxis("VerticalP1"); 
+        vertInput = Input.GetAxis("VerticalP2"); 
         transform.Translate(Vector2.up * speed * vertInput * Time.deltaTime);
     }
 }
