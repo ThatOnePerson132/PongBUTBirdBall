@@ -16,7 +16,8 @@ public class Player2PaddleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vertInput = Input.GetAxis("VerticalP2"); 
+        vertInput = Input.GetAxis("VerticalP2");
         transform.Translate(Vector2.up * speed * vertInput * Time.deltaTime);
+
     }
 }

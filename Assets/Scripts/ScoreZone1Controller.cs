@@ -9,7 +9,8 @@ public class ScoreZone1Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gm = gameObject.GetComponent<GameManager>();
+        // gm = gameObject.GetComponent<GameManager>();
+        gm = GameObject.FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -20,8 +21,11 @@ public class ScoreZone1Controller : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(collision.gameObject);
-        gm.p2s++;
-        StartCoroutine(gm.BallRespawn());
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            Destroy(collision.gameObject);
+            gm.player2Points++;
+            StartCoroutine(gm.BallRespawn());
+        }
     }
 }
