@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 16a0f2428ca22454a88b2712d1a19d82
+  - enabled: 1
     path: Assets/Scenes/PINGPONG.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Player1WinScreen.unity
+    guid: 26b69995dd398b14c8b971b74f61017e
+  - enabled: 1
+    path: Assets/Scenes/Player2WinScreen.unity
+    guid: 5bac019cc5783354d9eeca48fa81c63f
   m_configObjects: {}

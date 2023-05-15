@@ -25,6 +25,7 @@ public class ScoreZone1Controller : MonoBehaviour
         {
             Destroy(collision.gameObject);
             gm.player2Points++;
+            gm.Winnerscene();
             StartCoroutine(gm.BallRespawn());
         }
     }
